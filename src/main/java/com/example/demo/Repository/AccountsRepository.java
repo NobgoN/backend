@@ -1,8 +1,10 @@
 package com.example.demo.Repository;
 
-import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.CrudRepository;
 
-@Repository
-public class AccountsRepository {
+import com.example.sns.entity.Accounts;
+
+/** Accountsテーブル:RepositoryImpl */
+public interface AccountsRepository extends CrudRepository<Accounts, Integer> {
 
 }
